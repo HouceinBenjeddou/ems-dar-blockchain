@@ -28,7 +28,7 @@ used technologies:
     - $ npm install -g nodemon
     
 Setup folder structure to be like:
-(https://i.ibb.co/gW3H6TP/capture-20230128115545935.png)
+[this is an image](https://i.ibb.co/gW3H6TP/capture-20230128115545935.png)
 
 The backend server implementation will be in server.js file
     >In the server file, we’ll create an Express server and connect to our database in MongoDB Atlas
