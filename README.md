@@ -49,7 +49,7 @@ create our database schema using Mongoose
 ### Testing the server API
     >i used Insomnia 
     here's an example of a POST Request to add an employee
-    (https://i.ibb.co/cxBS0L6/capture-20230128121051623.png)
+    !(https://i.ibb.co/cxBS0L6/capture-20230128121051623.png)
     
 
 
@@ -81,13 +81,13 @@ create our database schema using Mongoose
 
 //Home
 
-[home](https://i.ibb.co/DppbhML/capture-20230128122439471.png)
+![home](https://i.ibb.co/DppbhML/capture-20230128122439471.png)
 
 //Create Employee
-[employee form](https://i.ibb.co/6FPXFWC/capture-20230128122600201.png)
+![employee form](https://i.ibb.co/6FPXFWC/capture-20230128122600201.png)
 
 //List employees
-[list employees](https://i.ibb.co/7XdMXnV/capture-20230128122629781.png)
+![list employees](https://i.ibb.co/7XdMXnV/capture-20230128122629781.png)
 
 //for further setup info: please check the readme.md provided on the Frontend folder
 
