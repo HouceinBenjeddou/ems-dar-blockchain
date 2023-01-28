@@ -28,7 +28,7 @@ used technologies:
     - $ npm install -g nodemon
     
 Setup folder structure to be like:
-[this is an image](https://i.ibb.co/gW3H6TP/capture-20230128115545935.png)
+[folder structure](https://i.ibb.co/gW3H6TP/capture-20230128115545935.png)
 
 The backend server implementation will be in server.js file
     >In the server file, we’ll create an Express server and connect to our database in MongoDB Atlas
@@ -81,13 +81,13 @@ create our database schema using Mongoose
 
 //Home
 
-(https://i.ibb.co/DppbhML/capture-20230128122439471.png)
+[home](https://i.ibb.co/DppbhML/capture-20230128122439471.png)
 
 //Create Employee
-(https://i.ibb.co/6FPXFWC/capture-20230128122600201.png)
+[employee form](https://i.ibb.co/6FPXFWC/capture-20230128122600201.png)
 
 //List employees
-(https://i.ibb.co/7XdMXnV/capture-20230128122629781.png)
+[list employees](https://i.ibb.co/7XdMXnV/capture-20230128122629781.png)
 
 //for further setup info: please check the readme.md provided on the Frontend folder
 
@@ -95,8 +95,6 @@ create our database schema using Mongoose
 
 
 
-
-// 
 
 
 
