@@ -26,32 +26,32 @@ export default class CreateEmployee extends Component{
     onChangeFirstname(e) {
       this.setState({
         first_name : e.target.value
-      });
+      })
     }
     onChangeLastname(e) {
       this.setState({
         last_name : e.target.value
-      });
+      })
     }
     onChangeEmail(e) {
       this.setState({
         email: e.target.value
-      });
+      })
     }
     onChangeAge(e) {
         this.setState({
           age: e.target.value
-        });
+        })
     }
     onChangePosition(e){
       this.setState({
         position: e.target.value
-      });
+      })
     }
     onChangeId(e){
       this.setState({
         id: e.target.value
-      });
+      })
     }
 
     onSubmit(e){
@@ -64,23 +64,24 @@ export default class CreateEmployee extends Component{
         age: this.state.age,
         position: this.state.position,
         id: this.state.id,      
-      };
+      }
 
       console.log(employee);
-
+      
       axios.post('http://localhost:5000/employee/add', employee)
       .then(res => console.log(res.data))
-      .catch(e => console.log(e));
-      
+      .catch(e => console.log(e))
+
       window.location = '/';
+      
     }
 
 
     render(){
       return (
         <form onSubmit={this.onSubmit} className='flex flex-col top-10 relative border p-12 rounded  container mx-auto max-w-3xl'>
-     <h1 className='text-center text-cyan-900 py-3 font-semibold text-lg border-b-2 '>
-     <Link to='/list' >
+        <h1 className='text-center text-cyan-900 py-3 font-semibold text-lg border-b-2 '>
+           <Link to='/list' >
               Show Employee List
             </Link>
       </h1> 
@@ -89,6 +90,7 @@ export default class CreateEmployee extends Component{
     <input className='border h-9 rounded '
         id="firstName"
         type="text"    
+        required
         placeholder=" Employee First name"
         name="firstName"
         value={this.state.first_name} 
@@ -100,7 +102,8 @@ export default class CreateEmployee extends Component{
         placeholder=' Employee Last name'
         type="text"
         name="lastName"
-       value={this.state.last_name}
+        required
+        value={this.state.last_name}
         onChange={this.onChangeLastname}
     />
     <label className="text-lg py-2" htmlFor="email">Email</label>
@@ -109,6 +112,7 @@ export default class CreateEmployee extends Component{
         placeholder=' Email'
         type="email"
         name="email"
+        required
         value={this.state.email}
         onChange={this.onChangeEmail}
     />
@@ -141,12 +145,8 @@ export default class CreateEmployee extends Component{
     />
     <div className='mt-8 justify-center flex '>
         <input type="submit" value="Add Employee"  className='border py-3  px-4 text-lg text-white bg-[#322364] rounded-md cursor-pointer '/>
-        <input className='border py-3 text-white px-4 text-lg bg-[#322364] rounded-md cursor-pointer '
-            style={{ marginLeft: '12px' }}
-            type="button"
-            value="Cancel"
-            onClick={() => (false)}
-        />
+        {/* <button onClick={this.onSubmit} type='button'>Submit</button> */}
+       
     </div>
 </form>
       )

@@ -23,9 +23,11 @@ const Employee = props => (
            </span>
       </div>
   </div> 
+
     <p className='text-2xl font-medium'>
-      <Link to={"/edit/"+props.employee._id}>Edit</Link> | <a href="#" onClick={() => { props.deleteEmployee(props.employee._id) }}>Delete</a>
+      <Link to={"/edit/"+props.employee._id}>Edit</Link> | <a href="#b" onClick={() => { props.deleteEmployee(props.employee._id) }}>Delete</a>
     </p>
+
   </div>
   </div>
  
