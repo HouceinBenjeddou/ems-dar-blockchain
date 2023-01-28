@@ -81,8 +81,8 @@ export default class CreateEmployee extends Component{
       return (
         <form onSubmit={this.onSubmit} className='flex flex-col top-10 relative border p-12 rounded  container mx-auto max-w-3xl'>
         <h1 className='text-center text-cyan-900 py-3 font-semibold text-lg border-b-2 '>
-           <Link to='/list' >
-              Show Employee List
+           <Link to='/' >
+             Go back
             </Link>
       </h1> 
     <h1 className='text-4xl py-3 font-semibold text-center'>Add Employee</h1>
