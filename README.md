@@ -1,3 +1,105 @@
+
+# Employee Management System
+>  full MERN stack app
+### Author: Houcein Ben Jeddou
+### Requested by: Dar Blockchain
+
+
+## Frontend
+Used technologies:
+    - Tailwindcss
+    - ReactJS
+    - JavaScript
+    - CSS3
+    - HTML5
+## Backend
+used technologies:
+    - Nodejs
+    - Express js
+    - MongoDB (Mongodb Atlas)
+    - Axios
+
+
+# 1. Setup Backend 
+
+> install the dependecies
+    - $ npm init -y
+    - $ npm install express cors mongoose dotenv
+    - $ npm install -g nodemon
+    
+Setup folder structure to be like:
+(https://i.ibb.co/gW3H6TP/capture-20230128115545935.png)
+
+The backend server implementation will be in server.js file
+    >In the server file, we’ll create an Express server and connect to our database in MongoDB Atlas
+// create the .env file for the mongoDb db
+
+### Database schema
+
+create our database schema using Mongoose
+    > create the employee model.js
+
+### create Mongodb cluster
+    > create the cluster at official mongoDb website // cluster 
+    > 1 establish a connection by providing an end user and you ip address...
+
+
+### Server API Endpoints
+    >add the API endpoint routes so the server
+### Testing the server API
+    >i used Insomnia 
+    here's an example of a POST Request to add an employee
+    (https://i.ibb.co/cxBS0L6/capture-20230128121051623.png)
+    
+
+
+# 2. setup the Frontend
+
+1. create a react project in a seperate folder
+    > npx create-react-app EMS
+
+2. add the tailwindcss framework
+
+3. add react router to navigate between our files
+    > npm install react-router-dom
+
+
+4. create our components
+    > CreateEmployee.jsx
+        > this componnet will add new user to our document database
+    > EditEmployee.jsx
+        > this provide updating the employee informations
+    > EmployeeDetails.jsx
+        > this show employee details
+    > ListEmployee.jsx
+        > list all of included employee in the schema
+    > Navbar.jsx
+    > Home.jsx
+
+5. setup Axios to connect to our backend
+    > import axios in every component and provide the POST, update, and get requests 
+
+//Home
+
+(https://i.ibb.co/DppbhML/capture-20230128122439471.png)
+
+//Create Employee
+(https://i.ibb.co/6FPXFWC/capture-20230128122600201.png)
+
+//List employees
+(https://i.ibb.co/7XdMXnV/capture-20230128122629781.png)
+
+//for further setup info: please check the readme.md provided on the Frontend folder
+
+
+
+
+
+
+// 
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
