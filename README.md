@@ -43,6 +43,7 @@ create our database schema using Mongoose
     > create the cluster at official mongoDb website // cluster 
     > 1 establish a connection by providing an end user and you ip address...
 
+    !(https://i.ibb.co/86yBSL5/capture-20230128123711658.png)
 
 ### Server API Endpoints
     >add the API endpoint routes so the server
